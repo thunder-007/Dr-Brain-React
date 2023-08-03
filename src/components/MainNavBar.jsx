@@ -1,11 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {Button} from "react-bootstrap";
 
 function MainNavBar() {
     return (
-        <Navbar className="mb-0"  collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar  collapseOnSelect expand="lg" className="bg-body-tertiary">
             <Container className="mb-0">
                 <Navbar.Brand href="#home">Brute Force </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
@@ -17,8 +16,8 @@ function MainNavBar() {
                     </Nav>
                     <Nav>
                         <Nav.Link href="#pricing">$15</Nav.Link>
-                        <Nav.Link href="#pricing">Login</Nav.Link>
-                        <Nav.Link href="#pricing">Sign up</Nav.Link>
+                        <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav.Link href="/signup">Sign up</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
